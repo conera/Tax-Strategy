@@ -688,7 +688,7 @@ header .container nav ul li:last-child {
 .stories .container .wrapper_info .our_rating .first_stage span::before {
   content: "";
   display: inline-block;
-  background: url(/images/logos/Group_big_stars.svg);
+  background: url(../images/logos/Group_big_stars.svg);
   width: 141px;
   height: 23px;
   margin-right: 14px;
@@ -721,7 +721,7 @@ header .container nav ul li:last-child {
   display: block;
   margin: 0 auto;
   margin-bottom: 5px;
-  background: url(/images/logos/Group_little_stars.svg);
+  background: url(../images/logos/Group_little_stars.svg);
   width: 100px;
   height: 17px;
 }
@@ -733,7 +733,7 @@ header .container nav ul li:last-child {
   text-align: center;
 }
 .Numerical_example .container h2 {
-  font-size: 48px;
+  font-size: 438px;
   line-height: 57px;
   font-family: "Bebas Neue";
   margin-bottom: 50px;
@@ -779,7 +779,7 @@ header .container nav ul li:last-child {
 .before_after .container div:first-child::after {
   content: "";
   display: block;
-  background: url(/images/logos/sad_emoji.svg);
+  background: url(../images/logos/sad_emoji.svg);
   width: 120px;
   height: 120px;
   position: relative;
@@ -805,7 +805,7 @@ header .container nav ul li:last-child {
   position: absolute;
   width: 24px;
   height: 24px;
-  background: url(/images/logos/cross.svg);
+  background: url(../images/logos/cross.svg);
   top: 20px;
   left: 0px;
 }
@@ -828,13 +828,13 @@ header .container nav ul li:last-child {
   position: absolute;
   width: 29px;
   height: 24px;
-  background: url(/images/logos/check.svg);
+  background: url(../images/logos/check.svg);
   top: 20px;
   left: 0px;
 }
 
 .network {
-  background-image: url(/images/sky_creepers.png);
+  background-image: url(../images//sky_creepers.png);
   background-repeat: no-repeat;
   background-position-y: -px;
   background-size: contain;
@@ -894,7 +894,7 @@ header .container nav ul li:last-child {
 .Free_consultation::after {
   content: "";
   display: inline-block;
-  background: url(/images/logos/message_icon.svg);
+  background: url(../images/logos/message_icon.svg);
   width: 247px;
   height: 247px;
   position: absolute;
@@ -937,7 +937,7 @@ header .container nav ul li:last-child {
   left: 0px;
   width: 24px;
   height: 24px;
-  background: url(/images/logos/black_coin.svg);
+  background: url(../images/logos/black_coin.svg);
 }
 
 .Advantages_from_advice {
@@ -967,7 +967,7 @@ header .container nav ul li:last-child {
   display: inline-block;
   width: 1163px;
   height: 781px;
-  background-image: url(/images/arrow_bg.png);
+  background-image: url(../images/arrow_bg.png);
   top: -38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -1020,7 +1020,7 @@ header .container nav ul li:last-child {
   width: 29px;
   height: 24px;
   background-repeat: no-repeat;
-  background-image: url(/images/logos/green_check.svg);
+  background-image: url(../images/logos/green_check.svg);
   top: 20px;
   left: 17px;
 }
@@ -1076,7 +1076,7 @@ header .container nav ul li:last-child {
   position: absolute;
   top: 28px;
   left: 33px;
-  background: url(/images/logos/plus.svg);
+  background: url(../images/logos/plus.svg);
   transition: 0.2s;
   transform: rotate(90deg);
 }
@@ -1092,7 +1092,7 @@ header .container nav ul li:last-child {
 }
 .Frequently_questions .container .active::after,
 .Frequently_questions .container .collapsible:active::after {
-  background: url(/images/logos/minus.svg);
+  background: url(../images/logos/minus.svg);
   height: 4px;
   top: 38px;
   transform: rotate(180deg);
@@ -1170,7 +1170,7 @@ header .container nav ul li:last-child {
 }
 
 .About_us {
-  background-image: url(/images/London_bg.jpg);
+  background-image: url(../images/London_bg.jpg);
   background-color: #171717;
   background-repeat: no-repeat;
   padding: 100px 0px 50px;
@@ -1286,7 +1286,7 @@ header .container nav ul li:last-child {
 .Our_team .container .owl-carousel .owl-nav button.owl-prev::before {
   content: "";
   position: absolute;
-  background: url(/images/logos/arrow_left.svg);
+  background: url(../images/logos/arrow_left.svg);
   width: 16px;
   height: 23px;
   top: 14px;
@@ -1303,7 +1303,7 @@ header .container nav ul li:last-child {
 .Our_team .container .owl-carousel .owl-nav button.owl-next::before {
   content: "";
   position: absolute;
-  background: url(/images/logos/arrow_right.svg);
+  background: url(../images/logos/arrow_right.svg);
   width: 23px;
   height: 23px;
   top: 13.5px;

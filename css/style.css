@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -60,12 +61,16 @@ body {
   margin-bottom: 16px;
   color: #35B984;
 }
+.learn_more_link i {
+  margin-left: 10px;
+}
 .learn_more_link::after {
   content: "\f138";
-  font-family: "Font Awesome 5 free";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   top: 2px;
   left: 10px;
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   position: relative;
 }
@@ -234,9 +239,6 @@ header .container nav ul li:last-child {
 }
 .first_section .wrapper div p span {
   font-weight: 700;
-}
-.first_section .wrapper div a {
-  color: #35B984;
 }
 .first_section .wrapper div:first-child h4::after {
   content: "1";
@@ -546,8 +548,78 @@ header .container nav ul li:last-child {
 .you_can_save .container .green_box {
   margin-bottom: 50px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 35px 60px;
   background-color: #35B984;
+  /* The slider itself */
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+.you_can_save .container .green_box .slidecontainer {
+  width: 100%;
+  max-width: 331px;
+  position: relative;
+}
+.you_can_save .container .green_box .slidecontainer::before {
+  content: "€ 50,000";
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  position: absolute;
+  top: -8px;
+}
+.you_can_save .container .green_box .slidecontainer::after {
+  content: "€ 1,000,000";
+  display: block;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  position: absolute;
+  top: -8px;
+  left: 264px;
+}
+.you_can_save .container .green_box .slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  border-radius: 50px;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 4px;
+  /* Specified height */
+  background: #FFFFFF;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.4;
+  /* Set transparency (for mouse-over effects on hover) */
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+.you_can_save .container .green_box .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+.you_can_save .container .green_box .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #04AA6D;
+  cursor: pointer;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+}
+.you_can_save .container .green_box .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
 }
 .you_can_save .container .green_box h3 {
   font-family: "Bebas Neue";
@@ -557,12 +629,53 @@ header .container nav ul li:last-child {
 .you_can_save .container .green_box .gen_box {
   display: flex;
   flex-direction: column;
+  width: 651px;
+}
+.you_can_save .container .green_box .gen_box hr {
+  margin-bottom: 26px;
+  border: 1px solid #171717;
+  opacity: 0.3;
 }
 .you_can_save .container .green_box .gen_box .top_part {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.you_can_save .container .green_box .gen_box .top_part p:last-child {
+  width: 170px;
+  padding: 9px 15px;
+  background-color: #1FA56F;
+}
+.you_can_save .container .green_box .gen_box .top_part p:last-child span {
+  margin-left: 19px;
+  font-size: 20px;
 }
 .you_can_save .container .green_box .gen_box .top_part p {
   color: #FFFFFF;
+}
+.you_can_save .container .green_box .gen_box .bottom_part {
+  display: flex;
+  align-items: center;
+}
+.you_can_save .container .green_box .gen_box .bottom_part p {
+  display: inline-block;
+  font-size: 15px;
+  color: #FFFFFF;
+  max-width: 136px;
+}
+.you_can_save .container .green_box .gen_box .bottom_part p:last-child {
+  margin-left: 131px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
+}
+.you_can_save .container .green_box .gen_box .bottom_part p:last-child::before {
+  content: "EUR";
+  font-size: 14px;
+  position: relative;
+  top: -8px;
+  left: -16px;
 }
 .you_can_save .container .calendly {
   display: flex;
@@ -589,12 +702,7 @@ header .container nav ul li:last-child {
   text-align: center;
 }
 .stories .container .wrapper .btn_toggle {
-  background-color: #35B984;
-  width: 110px;
-  height: 50px;
-}
-.stories .container .wrapper .btn_toggle .left {
-  background-color: #858585;
+  display: flex;
 }
 .stories .container .wrapper_info {
   display: flex;
@@ -625,6 +733,7 @@ header .container nav ul li:last-child {
   position: relative;
   box-shadow: 0px 10px 40px rgba(133, 133, 133, 0.4);
   margin-bottom: 30px;
+  height: 590px;
 }
 .stories .container .wrapper_info .wrapper_text::after {
   content: "";
@@ -727,7 +836,7 @@ header .container nav ul li:last-child {
 }
 
 .Numerical_example {
-  margin: 100px 0px 100px;
+  margin: 100px 0px 0px;
 }
 .Numerical_example .container {
   text-align: center;
@@ -748,6 +857,13 @@ header .container nav ul li:last-child {
 .Numerical_example .container p span {
   font-weight: 500;
   color: #35B984;
+}
+.Numerical_example .container img {
+  margin-bottom: 100px;
+}
+.Numerical_example hr {
+  color: #858585;
+  opacity: 85%;
 }
 
 .before_after {
@@ -846,6 +962,7 @@ header .container nav ul li:last-child {
   font-size: 64px;
   line-height: 77px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .network .container .wrapper {
   display: flex;
@@ -1240,7 +1357,11 @@ header .container nav ul li:last-child {
 }
 
 .Our_team {
-  padding: 100px 0px 100px;
+  padding: 100px 0px 0px;
+}
+.Our_team hr {
+  color: #858585;
+  opacity: 85%;
 }
 .Our_team .container h4 {
   font-family: "Bebas Neue";
@@ -1268,6 +1389,9 @@ header .container nav ul li:last-child {
 .Our_team .container .img_box {
   margin: 0 auto;
   max-width: 240px;
+}
+.Our_team .container .owl-carousel {
+  margin-bottom: 100px;
 }
 .Our_team .container .owl-carousel .owl-stage {
   display: flex;
@@ -1389,4 +1513,106 @@ Footer .container .wrapper .contact a {
 }
 Footer .container .wrapper .contact::after {
   left: 179px;
+}
+
+.Our_team .container .owl-carousel .owl-item {
+  background: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: rgba(241, 241, 241, 0.9450980392);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.next::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #35B984;
+  position: relative;
+}
+.next::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/logos/arrow_right.svg);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 13.5px;
+  left: 11.5px;
+}
+
+.prev {
+  cursor: pointer;
+  position: relative;
+}
+.prev::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #858585;
+  position: relative;
+}
+.prev::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/logos/arrow_left.svg);
+  position: absolute;
+  width: 16px;
+  height: 23px;
+  top: 14px;
+  left: 17px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: relative;
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* The dot/bullet/indicator container */
+.dot-container {
+  position: absolute;
+  top: 524px;
+  left: 102px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-right: 6px;
+  margin-left: 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:first-child {
+  margin-left: 0;
+}
+.dot:last-child {
+  margin-right: 0;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #35B984;
 }/*# sourceMappingURL=style.css.map */

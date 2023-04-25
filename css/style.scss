@@ -66,16 +66,21 @@ body {
     margin-bottom: 16px;
     color: #35B984;
 
+    i {
+        margin-left: 10px;
+    }
+
     &::after {
-        content: '\f138';
+        content: "\f138";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
 
-
-        font-family: "Font Awesome 5 free";
         top: 2px;
         left: 10px;
-        font-size: 18px;
+        font-size: 20px;
         display: inline-block;
         position: relative;
+
 
     }
 
@@ -83,7 +88,9 @@ body {
         color: #171717;
         transition: 0.2s;
     }
+
 }
+
 
 header {
     padding-top: 21px;
@@ -224,6 +231,7 @@ header {
         padding-bottom: 20px;
         justify-content: space-between;
 
+
         &:last-child {
             div {
                 &:first-child {
@@ -313,9 +321,9 @@ header {
 
             }
 
-            a {
-                color: #35B984;
-            }
+            // a {
+            //     color: #35B984;
+            // }
 
             &:first-child {
                 h4 {
@@ -733,9 +741,85 @@ header {
         .green_box {
             margin-bottom: 50px;
             display: flex;
-            // justify-content: space-between;
+            justify-content: space-between;
+            align-items: center;
             padding: 35px 60px;
             background-color: #35B984;
+
+            .slidecontainer {
+                width: 100%;
+                max-width: 331px;
+                position: relative;
+
+                &::before {
+                    content: "€ 50,000";
+                    display: inline-block;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 14px;
+                    position: absolute;
+                    top: -8px;
+                }
+
+                &::after {
+                    content: "€ 1,000,000";
+                    display: block;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 14px;
+                    position: absolute;
+                    top: -8px;
+                    left: 264px;
+                }
+            }
+
+            /* The slider itself */
+            .slider {
+                -webkit-appearance: none;
+                /* Override default CSS styles */
+                border-radius: 50px;
+                appearance: none;
+                width: 100%;
+                /* Full-width */
+                height: 4px;
+                /* Specified height */
+                background: #FFFFFF;
+                /* Grey background */
+                outline: none;
+                /* Remove outline */
+                opacity: 0.4;
+                /* Set transparency (for mouse-over effects on hover) */
+                -webkit-transition: .2s;
+                /* 0.2 seconds transition on hover */
+                transition: opacity .2s;
+            }
+
+            /* Mouse-over effects */
+            .slider:hover {
+                opacity: 1;
+                /* Fully shown on mouse-over */
+            }
+
+            /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 24px;
+                height: 24px;
+                background: #04AA6D;
+                cursor: pointer;
+                border: 4px solid #FFFFFF;
+                border-radius: 100%;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #04AA6D;
+                cursor: pointer;
+            }
 
             h3 {
                 font-family: $font-Bebas;
@@ -746,12 +830,59 @@ header {
             .gen_box {
                 display: flex;
                 flex-direction: column;
+                width: 651px;
+                hr{
+                    margin-bottom: 26px;
+                    border: 1px solid #171717;
+                    opacity: 0.3;
+                }
 
                 .top_part {
                     display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 35px;
+
+                    p:last-child {
+                        width: 170px;
+                        padding: 9px 15px;
+                        background-color: #1FA56F;
+
+                        span {
+                            margin-left: 19px;
+                            font-size: 20px;
+                        }
+                    }
+
 
                     p {
                         color: #FFFFFF;
+
+
+                    }
+                }
+                .bottom_part{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        display: inline-block;
+                        font-size: 15px;
+                        color: #FFFFFF;
+                        max-width: 136px;
+                    }
+                    p:last-child{
+                        
+                        &::before{
+                            content: "EUR";
+                            font-size: 14px;
+                            position: relative;
+                            top: -8px;
+                            left: -16px;
+                        }
+                        margin-left: 131px;
+                        font-size: 40px;
+                        line-height: 60px;
+                        font-weight: 500;
                     }
                 }
             }
@@ -791,13 +922,7 @@ header {
             }
 
             .btn_toggle {
-                background-color: #35B984;
-                width: 110px;
-                height: 50px;
-
-                .left {
-                    background-color: #858585;
-                }
+                display: flex;
             }
         }
 
@@ -835,6 +960,7 @@ header {
                 position: relative;
                 box-shadow: 0px 10px 40px #85858566;
                 margin-bottom: 30px;
+                height: 590px;
 
                 &::after {
                     content: '';
@@ -965,7 +1091,7 @@ header {
 }
 
 .Numerical_example {
-    margin: 100px 0px 100px;
+    margin: 100px 0px 0px;
 
     .container {
         text-align: center;
@@ -990,6 +1116,13 @@ header {
                 color: #35B984;
             }
         }
+        img{
+            margin-bottom: 100px;
+        }
+    }
+    hr{
+        color: #858585;
+opacity: 85%;
     }
 }
 
@@ -1116,6 +1249,7 @@ header {
             font-size: 64px;
             line-height: 77px;
             text-align: center;
+            margin-bottom: 50px;
         }
 
         .wrapper {
@@ -1615,8 +1749,11 @@ header {
 }
 
 .Our_team {
-    padding: 100px 0px 100px;
-
+    padding: 100px 0px 0px;
+    hr{
+        color: #858585;
+opacity: 85%;
+    }
     .container {
         h4 {
             font-family: $font-Bebas;
@@ -1650,10 +1787,13 @@ header {
             max-width: 240px;
 
         }
-
+        .owl-carousel {
+            margin-bottom: 100px;
+        }
         .owl-carousel .owl-stage {
             display: flex;
             align-items: center;
+           
         }
 
         .owl-carousel .owl-item img {
@@ -1769,20 +1909,24 @@ header {
 Footer {
     background-color: #EEEEEE;
     padding: 54px 0px 20px;
-hr{
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
+
+    hr {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
     .container {
         .wrapper {
             align-items: center;
-           justify-content: space-between;
-           div{
-            &:first-of-type{
-                display: flex;
-                align-items: center;
+            justify-content: space-between;
+
+            div {
+                &:first-of-type {
+                    display: flex;
+                    align-items: center;
+                }
             }
-           }
+
             ul {
                 display: flex;
                 margin-right: 50px;
@@ -1804,4 +1948,119 @@ hr{
             }
         }
     }
+}
+
+.Our_team .container .owl-carousel .owl-item {
+    background: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+
+}
+
+/* Next & previous buttons */
+
+.next {
+    cursor: pointer;
+    margin-left: 10px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #35B984;
+        position: relative;
+
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background: url(../images/logos/arrow_right.svg);
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        top: 13.5px;
+        left: 11.5px;
+    }
+}
+
+.prev {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #858585;
+        position: relative;
+
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background: url(../images/logos/arrow_left.svg);
+        position: absolute;
+        width: 16px;
+        height: 23px;
+        top: 14px;
+        left: 17px;
+    }
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: relative;
+    right: 0;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    position: absolute;
+    top: 524px;
+    left: 102px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-right: 6px;
+    margin-left: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #35B984;
 }

@@ -1,0 +1,96 @@
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 294px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  header .container nav ul div {
+    display: none;
+  }
+  header .container nav ul li:last-child {
+    display: none;
+  }
+  .Companies_in_countries .container .wrapper .tax_fraud_case {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 294px;
+  }
+  .You_can_save .container .calendly {
+    flex-direction: column;
+  }
+  .You_can_save .container .green_box {
+    flex-direction: column;
+  }
+  .You_can_save .container .green_box .gen_box {
+    max-width: 294px;
+  }
+  .You_can_save .container .green_box .gen_box .top_part {
+    flex-direction: column;
+  }
+  .You_can_save .container .green_box .gen_box .bottom_part {
+    flex-direction: column;
+  }
+  .You_can_save .container .green_box .gen_box .bottom_part p:last-child {
+    margin: 0;
+  }
+  .Stories .container .wrapper_info {
+    flex-direction: column;
+  }
+  .Stories .container .wrapper_info .wrapper_text {
+    padding: 80px 19px 20px 20px;
+    height: initial;
+  }
+  .Stories .container .wrapper_info .dot-container {
+    display: none;
+  }
+  .Stories .container .wrapper_info .our_rating {
+    padding: 40px 20px 20px;
+  }
+  .Stories .container .wrapper_info .our_rating .first_stage {
+    flex-direction: column;
+  }
+  .Stories .container .wrapper_info .our_rating .second_stage {
+    flex-direction: column;
+  }
+  .Before_after .container {
+    flex-direction: column;
+  }
+  .Before_after .container div:first-child::after {
+    display: none;
+  }
+  .Free_consultation::after {
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+  .Advantages_from_advice .container .wrapper::before {
+    display: none;
+  }
+  .Frequently_questions .container .contact {
+    flex-direction: column;
+  }
+  .Frequently_questions .container .contact::after {
+    display: none;
+  }
+  .Free_consultation .container .contact {
+    flex-direction: column;
+  }
+  .Our_team .owl-nav {
+    display: none;
+  }
+  .Regulation .container .wrapper div {
+    flex-wrap: wrap;
+  }
+  Footer .contaienr .wrapper div:first-of-type {
+    flex-direction: column;
+  }
+  Footer .contaienr .wrapper .contact {
+    flex-direction: column;
+  }
+  Footer .container .wrapper div:first-of-type {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -191,7 +191,7 @@ header {
 
 }
 
-.first_section {
+.First_section {
     padding: 90px 0px 70px;
 
     background: url(../images/back.jpg) no-repeat center/cover;
@@ -230,29 +230,8 @@ header {
     .wrapper {
         padding-bottom: 20px;
         justify-content: space-between;
+        flex-wrap: wrap;
 
-
-        &:last-child {
-            div {
-                &:first-child {
-                    h4 {
-                        &::after {
-                            content: "4";
-
-                        }
-                    }
-                }
-
-                &:nth-child(2) {
-                    h4 {
-                        &::after {
-                            content: "5";
-
-                        }
-                    }
-                }
-            }
-        }
 
         .last_box {
             background: none;
@@ -326,6 +305,7 @@ header {
             // }
 
             &:first-child {
+                margin-bottom: 20px;
                 h4 {
                     &::after {
                         content: "1";
@@ -335,7 +315,7 @@ header {
             }
 
             &:nth-child(2) {
-
+                margin-bottom: 20px;
                 h4 {
                     &::after {
                         content: "2";
@@ -345,9 +325,26 @@ header {
             }
 
             &:nth-child(3) {
+                margin-bottom: 20px;
                 h4 {
                     &::after {
                         content: "3";
+
+                    }
+                }
+            }
+            &:nth-child(4){
+                h4 {
+                    &::after {
+                        content: "4";
+
+                    }
+                }
+            }
+            &:nth-child(5){
+                h4 {
+                    &::after {
+                        content: "5";
 
                     }
                 }
@@ -395,7 +392,7 @@ header {
     }
 }
 
-.be_aware {
+.Be_aware {
     padding: 100px 0px 50px;
 
     h2 {
@@ -567,7 +564,7 @@ header {
 
 ;
 
-.companies_in_countries {
+.Companies_in_countries {
     padding: 97px 0px 108px;
     background: url(../images/statue_of_liberty.jpg) no-repeat;
 
@@ -655,7 +652,7 @@ header {
     }
 }
 
-.you_can_save {
+.You_can_save {
     padding-bottom: 100px;
 
     .container {
@@ -708,7 +705,7 @@ header {
                     height: 483px;
 
                     .img_box {
-                        width: 565px;
+                        max-width: 565px;
                         position: relative;
                         margin-bottom: 10px;
 
@@ -831,7 +828,8 @@ header {
                 display: flex;
                 flex-direction: column;
                 width: 651px;
-                hr{
+
+                hr {
                     margin-bottom: 26px;
                     border: 1px solid #171717;
                     opacity: 0.3;
@@ -861,24 +859,28 @@ header {
 
                     }
                 }
-                .bottom_part{
+
+                .bottom_part {
                     display: flex;
                     align-items: center;
-                    p{
+
+                    p {
                         display: inline-block;
                         font-size: 15px;
                         color: #FFFFFF;
                         max-width: 136px;
                     }
-                    p:last-child{
-                        
-                        &::before{
+
+                    p:last-child {
+
+                        &::before {
                             content: "EUR";
                             font-size: 14px;
                             position: relative;
                             top: -8px;
                             left: -16px;
                         }
+
                         margin-left: 131px;
                         font-size: 40px;
                         line-height: 60px;
@@ -902,7 +904,7 @@ header {
     }
 }
 
-.stories {
+.Stories {
     padding: 100px 0 100px;
     background: #EEEEEE;
 
@@ -1116,17 +1118,27 @@ header {
                 color: #35B984;
             }
         }
-        img{
+
+        .img_box {
+            max-width: 815px;
+            margin: auto;
             margin-bottom: 100px;
+            
+
+            img {
+                width: 100%;
+
+            }
         }
     }
-    hr{
+
+    hr {
         color: #858585;
-opacity: 85%;
+        opacity: 85%;
     }
 }
 
-.before_after {
+.Before_after {
     margin: 100px 0px 100px;
 
     .container {
@@ -1750,10 +1762,12 @@ opacity: 85%;
 
 .Our_team {
     padding: 100px 0px 0px;
-    hr{
+
+    hr {
         color: #858585;
-opacity: 85%;
+        opacity: 85%;
     }
+
     .container {
         h4 {
             font-family: $font-Bebas;
@@ -1787,13 +1801,15 @@ opacity: 85%;
             max-width: 240px;
 
         }
+
         .owl-carousel {
             margin-bottom: 100px;
         }
+
         .owl-carousel .owl-stage {
             display: flex;
             align-items: center;
-           
+
         }
 
         .owl-carousel .owl-item img {
